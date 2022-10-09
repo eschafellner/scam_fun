@@ -33,7 +33,7 @@ name_ext = json.loads(open("data/mail_ext.json").read())
 
 url = ""
 #insert target url here
-#example 'http://etf-buy.pottsfam.com/index872dijasydu2iuad27aysdu2yytaus6d2ajsdhasdasd2.php'
+#example "http://etf-buy.pottsfam.com/index872dijasydu2iuad27aysdu2yytaus6d2ajsdhasdasd2.php"
 
 while True:
     for name in names:
