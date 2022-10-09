@@ -5,25 +5,28 @@ import string
 import json
 import time
 
-chars = string.digits or ""
+chars = string.digits
 random.seed = (os.urandom(1024))
 
-names = json.loads(open('names.json').read())
+#data directory contains all list files
+
+names = json.loads(open("data/names.json").read())
 #firstname list
-nachname = json.loads(open('nachname.json').read())
+nachname = json.loads(open("data/nachname.json").read())
 #secondname list
-vorwahl = json.loads(open("vorwahl.json").read())
+vorwahl = json.loads(open("data/vorwahl.json").read())
 #starting number list for telephone number
-landvw = json.loads(open("landvw.json").read())
+landvw = json.loads(open("data/landvw.json").read())
 #country code list
-maildom = json.loads(open("maildom.json").read())
+maildom = json.loads(open("data/maildom.json").read())
 #mail domain list
-name_ext = json.loads(open("mail_ext.json").read())
+name_ext = json.loads(open("data/mail_ext.json").read())
 #additinal characters for email adresse
 
 
 url = ""
 #insert target url here
+#example 'http://etf-buy.pottsfam.com/index872dijasydu2iuad27aysdu2yytaus6d2ajsdhasdasd2.php'
 
 while True:
     for name in names:
@@ -39,8 +42,9 @@ while True:
             #"Datafield name": username,
             #"Datafield number": number,
             #"Datafield email": email,
-            #adapt data fields as needed / as sent by the request
         #})    
+
+        #adapt data field names as needed / as sent by the request
 
     print("sending username %s and number %s and email %s" % (username, number, email))
     time.sleep(1)
