@@ -1,3 +1,10 @@
+#Requirements:
+#Pyhton 3.7
+#Pip3
+#Requests moduel (pip install requests)
+
+#Remove comments to fully activate http requests (import request, request segment)"
+
 #import request
 import os
 import random
@@ -44,7 +51,7 @@ while True:
             #"Datafield email": email,
         #})    
 
-        #adapt data field names as needed / as sent by the request
+        #adapt data field names as needed / as sent by the request and also provide the full request data
 
     print("sending username %s and number %s and email %s" % (username, number, email))
     time.sleep(1)
